@@ -1,0 +1,50 @@
+.container {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.navBar {
+  padding: 0 20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: var(--navigation-background-color);
+  color: var(--navigation-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar img {
+  position: relative;
+  border-radius: 50%;
+}
+
+.navBar .logo {
+  background-color: var(--navigation-logo-background-color);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.artists {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 5px;
+  right: -300px;
+  transition: right 0.5s ease-in-out, opacity 1s ease-in-out;
+}
+
+.artists.active {
+  right: 50px;
+}
+
+.faBars {
+  height: 20px;
+  position: relative;
+  color: blue;
+  z-index: 1000;
+}

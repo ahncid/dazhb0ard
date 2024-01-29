@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px white solid;
+  padding: 20px;
+  width: 100%;
+}
+
+.portfolios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio img {
+  object-fit: contain;
+  max-width: 100%;
+}
